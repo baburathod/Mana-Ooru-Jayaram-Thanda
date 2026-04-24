@@ -1,14 +1,6 @@
-<div align="center">
-  <img src="public/logo.jpg.png" alt="Mana Ooru Logo" width="150" style="border-radius: 50%" />
-</div>
-
 # Mana Ooru – Jayaram Thanda
 
 **మన గ్రామాన్ని డిజిటల్‌గా కలుపుతూ | Connecting our village digitally**
-
-<p align="center">
-  <img src="public/school.jpg.png" alt="Mana Ooru Collage" width="100%" />
-</p>
 
 Mana Ooru – Jayaram Thanda is a mobile-first Digital Village Platform designed to improve communication, governance, and service accessibility for rural communities. This repository contains the Frontend PWA code built with React.js and Tailwind CSS.
 
@@ -24,14 +16,6 @@ The platform integrates rural employment schemes such as Mahatma Gandhi National
 - **Services Directory**: Information on government schemes, job updates, and farming info.
 - **AI Assistant UI**: Interface for a basic AI assistant for querying scheme information in Telugu and English.
 - **PWA Ready**: Configured for offline access and mobile installation.
-
-## Gallery
-
-<p align="center">
-  <img src="public/sunrise.jpg.jpeg" alt="Village Morning" width="48%" style="border-radius: 8px" />
-  &nbsp;
-  <img src="public/farmer.jpg.png" alt="Farmer AI Access" width="48%" style="border-radius: 8px" />
-</p>
 
 ## Tech Stack
 
