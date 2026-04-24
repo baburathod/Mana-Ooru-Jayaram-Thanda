@@ -1,3 +1,4 @@
+
 <div align="center">
   <img src="./public/logo.jpg.png" alt="Mana Ooru Logo" width="150" style="border-radius: 50%" />
 </div>
