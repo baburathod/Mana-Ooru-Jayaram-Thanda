@@ -50,6 +50,8 @@ const db = new sqlite3.Database(dbPath, (err) => {
           }
         });
       }
+    });
+
     db.run(`CREATE TABLE IF NOT EXISTS iot_data (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       water_level INTEGER DEFAULT 85,
