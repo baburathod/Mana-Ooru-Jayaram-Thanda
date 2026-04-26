@@ -20,9 +20,10 @@ The platform integrates rural employment schemes such as Mahatma Gandhi National
 - **Community-Centered Design**: Simple, readable UI emphasizing the village identity.
 - **Notice Board**: Important updates, events, and utility schedules from the Panchayat.
 - **Important Contacts**: Quick access to essential personnel like Sarpanch, Health Workers, Police, and Ambulance.
-- **Complaint System**: Easy issue reporting with optional photo upload.
+- **Complaint System**: Easy issue reporting with status tracking for villagers.
 - **Services Directory**: Information on government schemes, job updates, and farming info.
-- **AI Assistant UI**: Interface for a basic AI assistant for querying scheme information in Telugu and English.
+- **AI Scheme Assistant**: An intelligent Chatbot powered by NLP to answer scheme queries in Telugu.
+- **AI Crop Scanner**: Computer vision endpoint to diagnose crop diseases from images.
 - **PWA Ready**: Configured for offline access and mobile installation.
 
 ## Gallery
@@ -59,19 +60,44 @@ The platform integrates rural employment schemes such as Mahatma Gandhi National
    npm run build
    ```
 
-## Future Scope & Technologies (Phase 2 Roadmap)
-To enhance the village portal using smart, scalable, and practical technologies, the following integrations are planned:
+## The 5-Phase Development Roadmap
 
-1. **🗣️ Voice-Based Interface**: Telugu voice commands (Speech-to-Text via Whisper/Google) for accessibility.
-2. **🌐 Offline-First Smart App**: Advanced PWA with Service Workers and IndexedDB for offline access and syncing.
-3. **📊 Data Analytics**: Dashboards using Chart.js to analyze complaints, water issues, and job demand.
-4. **🌍 IoT-Based Monitoring**: Sensors (ESP32) for auto water tank alerts, street lights, and soil moisture.
-5. **🤖 Advanced AI Assistant**: LLM integration for personalized chatbot guidance on schemes and farming.
-6. **📲 WhatsApp Integration**: Twilio/WhatsApp API to broadcast instant Panchayat notices to the village.
-7. **🔐 Blockchain for Transparency**: Secure, tamper-proof records for land, scheme payments, and NREGA.
-8. **📡 Smart Notifications System**: Push notifications (Firebase) for immediate emergency and water alerts.
-9. **🧑‍🌾 Smart Agriculture AI**: Computer Vision ML models for instant crop disease detection via uploaded photos.
-10. **🗺️ GIS & Location Services**: Google Maps API integration to locate water sources, NREGA works, and facilities.
+The development of Mana Ooru is strategically divided into 5 phases to ensure scalability and practical rural deployment:
+
+### ✅ Phase 1: Frontend MVP (The Skeleton)
+- **Status:** Completed
+- **Technology:** React.js, Tailwind CSS, Vite PWA
+- **Impact:** A mobile-first, offline-capable UI in Telugu to bridge the digital divide.
+
+### ✅ Phase 2: Full-Stack Architecture (The Brain)
+- **Status:** Completed
+- **Technology:** Node.js, Express.js, SQLite
+- **Impact:** Dynamic data management for real-time Notice Boards, complaints, and NREGA tracking.
+
+### ✅ Phase 3: Hardware Integration (Smart Village IoT)
+- **Status:** Completed (Digital Twin API Active)
+- **Technology:** REST APIs, Node.js endpoints
+- **Impact:** A live **Panchayat Dashboard** monitoring physical assets like water tank levels and street lights to prevent resource wastage.
+
+### ✅ Phase 4: Artificial Intelligence (Automated Governance)
+- **Status:** Completed
+- **Technology:** NLP matching & Computer Vision API
+- **Impact:** Includes an **AI Chatbot Assistant** for natural-language scheme recommendations and an **AI Crop Disease Scanner** for instant agricultural diagnosis.
+
+### 🚀 Phase 5: Production Scale (Go-To-Market)
+- **Status:** Future Scope
+- **Technology:** AWS/Supabase, Physical ESP32 Sensors, Twilio WhatsApp API.
+- **Impact:** Installing physical hardware in Jayaram Thanda, connecting to global cloud servers, and automating village-wide WhatsApp broadcasts.
+
+---
+
+## 👑 The "Digital Sarpanch" Model (Implementation Strategy)
+A common challenge in rural tech adoption is the digital illiteracy of elderly village officials (Sarpanch/Secretaries). 
+
+**Solution:** This platform introduces the role of a **Village Technology Officer (VTO)**. The educated youth who develops/maintains the software acts as the digital bridge. 
+- The VTO uses their Super-Admin access to update the portal on behalf of the administration. 
+- They hardcode demographic updates, manage the IoT dashboard, and push official notices.
+- This ensures the technology actually gets utilized and maintained, fostering youth leadership in rural development.
 
 ## UI/UX Guidelines Followed
 - **No Heavy Libraries**: Excluded Matter.js/Three.js to ensure fast loading on low-end mobile devices.
